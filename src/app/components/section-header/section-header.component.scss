@@ -1,6 +1,12 @@
+@import '../../../styles/mixins';
+
 .section-container {
     min-height: 100vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,10 +16,11 @@
 }
 
 .section-header-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--section-header-message-background);
     color: var(--section-header-message-color);
+}
+
+.section-greeting {
+    color: var(--section-header-message-color);
+    @include header(2.5rem, 0.1em, 0.1em);
 }

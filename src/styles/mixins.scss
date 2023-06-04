@@ -1,0 +1,5 @@
+@mixin header($fontSize, $padding, $borderRadius) {
+    font-size: $fontSize;
+    padding: $padding;
+    border-radius: $borderRadius;
+}
