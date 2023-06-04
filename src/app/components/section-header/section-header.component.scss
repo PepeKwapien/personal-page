@@ -1,0 +1,19 @@
+.section-container {
+    min-height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    background-color: hsl(0, 0%, 40%);
+}
+
+.section-header-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--section-header-message-background);
+    color: var(--section-header-message-color);
+}
