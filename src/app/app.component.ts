@@ -15,22 +15,24 @@ export class AppComponent implements AfterViewInit {
         const intersectionObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    for (const classPairs of counterClasses) {
-                        console.log(entry.target.classList.contains(classPairs[0]));
-
-                        if (entry.target.classList.contains(classPairs[0])) {
-                            entry.target.classList.add(counterClasses.get(classPairs[0])!);
+                    for (const classPair of counterClasses) {
+                        if (entry.target.classList.contains(classPair[0])) {
+                            entry.target.classList.add(counterClasses.get(classPair[0])!);
                         }
                     }
                 } else {
-                    for (const classPairs of counterClasses) {
-                        entry.target.classList.remove(classPairs[1]);
+                    for (const classPair of counterClasses) {
+                        entry.target.classList.remove(classPair[1]);
                     }
                 }
             });
         });
 
-        const blurElements = document.querySelectorAll('.blur, .hide-right');
+        const classesToQuery: string[] = [];
+        for (const classPair of counterClasses) {
+            classesToQuery.push(`.${classPair[0]}`);
+        }
+        const blurElements = document.querySelectorAll(classesToQuery.join(', '));
         blurElements.forEach((el) => intersectionObserver.observe(el));
     }
 }
