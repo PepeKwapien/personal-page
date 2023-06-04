@@ -13,7 +13,7 @@ export class SectionHeaderComponent {
     get showGreeting() {
         return this._showGreeting;
     }
-    set showGreeting(value: boolean) {
+    set showGreeting(value: any) {
         this._showGreeting = coerceBooleanProperty(value);
     }
 
