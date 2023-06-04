@@ -1,0 +1,26 @@
+.blur {
+    filter: blur(10px);
+    transition: all 0.7s;
+}
+
+.unblur {
+    filter: blur(0);
+}
+
+.hide-right {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 0.8s;
+}
+
+.show-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (prefers-reducted-motion) {
+    .hidden,
+    .hide-right {
+        transition: none;
+    }
+}
