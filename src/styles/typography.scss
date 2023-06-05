@@ -15,3 +15,20 @@ h1 {
 h2 {
     @include header(4rem, 0, 0);
 }
+
+.paragraph-text {
+    color: var(--section-header-message-color);
+    font-size: var(--paragraph-fs);
+}
+
+.paragraph {
+    padding: 1rem 2rem;
+}
+
+.paragraph:first-of-type {
+    padding-top: 2rem;
+}
+
+.paragraph:last-of-type {
+    padding-bottom: 2rem;
+}

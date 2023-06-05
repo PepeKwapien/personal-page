@@ -1,7 +1,9 @@
-.aboutme-container {
+@import '../../../styles/variables';
+
+.aboutme-header-container {
     width: clamp(45ch, 70%, 75ch);
     justify-content: center;
-    margin: 4rem auto;
+    margin: 4rem auto 1.5rem;
     display: grid;
     column-gap: 2.5em;
     grid-template-columns: min-content max-content;
@@ -15,12 +17,14 @@
     height: 15rem;
     grid-area: img;
     z-index: 2;
+    box-shadow: $box-shadow;
 }
 
 .aboutme-title {
     text-transform: capitalize;
     grid-area: title;
     align-self: end;
+    text-shadow: $box-shadow-subtle;
 }
 
 .aboutme-subtitle {
@@ -34,4 +38,24 @@
     left: -18rem;
     width: calc(100% + 18rem);
     border-radius: 5px;
+    box-shadow: $box-shadow-subtle;
+}
+
+.aboutme-body-container {
+    background-image: url('/assets/images/florence.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.aboutme-innerbody-container {
+    height: 100%;
+    width: clamp(45ch, 65%, 75ch);
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 10%, 85%);
+    border-radius: 20px;
+    box-shadow: $box-shadow-subtle;
 }
