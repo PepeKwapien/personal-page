@@ -18,6 +18,15 @@
     transform: translateX(0);
 }
 
+.move-down {
+    transform: translateY(100%);
+    transition: all 1.2s;
+}
+
+.move-up {
+    transform: translateY(0);
+}
+
 @media (prefers-reducted-motion) {
     .hidden,
     .hide-right {

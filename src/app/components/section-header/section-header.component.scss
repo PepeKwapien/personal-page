@@ -24,3 +24,7 @@
     color: var(--section-header-message-color);
     @include header(2.5rem, 0.1em, 0.1em);
 }
+
+h1 {
+    z-index: 1;
+}
