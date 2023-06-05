@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
     constructor() {}
+
+    public get age(): number {
+        const dateNow = new Date();
+        const birth = new Date(1998, 11, 19);
+        const diffInMilliseconds = dateNow.getTime() - birth.getTime();
+        const diffInYears = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+
+        return diffInYears;
+    }
 }

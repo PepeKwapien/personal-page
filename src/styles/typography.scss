@@ -19,6 +19,8 @@ h2 {
 .paragraph-text {
     color: var(--section-header-message-color);
     font-size: var(--paragraph-fs);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .paragraph {
