@@ -78,3 +78,9 @@ h2 {
         font-size: $paragraph-fs-verysmall;
     }
 }
+
+@media (max-width: 330px) {
+    h1 {
+        @include header(1.5rem, 0.3em, 0.2em);
+    }
+}

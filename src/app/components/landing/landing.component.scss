@@ -62,6 +62,15 @@
     }
 }
 
+@media (max-width: $verysmall-boundary) {
+    .section-greeting {
+        position: relative;
+        color: var(--section-header-message-color);
+        @include header($greeting-fs-verysmall, 0.1em, 0.1em);
+        text-shadow: $box-shadow-strong;
+    }
+}
+
 h1 {
     z-index: 1;
 }
