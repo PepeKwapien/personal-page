@@ -3,7 +3,7 @@
     <h2 class="section-title blur" [ngClass]="{ 'hide-left': reverted, 'hide-right': !reverted }">{{ title }}</h2>
     <span
         class="section-subtitle blur"
-        [ngClass]="{ 'section-subtitle-reverted': reverted, 'hide-left': reverted, 'hide-right': !reverted }"
+        [ngClass]="{ 'section-subtitle-reverted hide-left': reverted, 'hide-right': !reverted }"
         >{{ subtitle }}</span
     >
 </div>
