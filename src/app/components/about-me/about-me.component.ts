@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Stack } from 'src/app/enums/stack.enum';
 import { jobHistory } from 'src/app/helpers/job-collection.helper';
 import { secret } from 'src/app/helpers/secret.helper';
 import { IJob } from 'src/app/interfaces/job.interface';
@@ -11,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AboutMeComponent {
     public placeOfLiving: string = secret;
-    public currentJob: IJob = { name: secret, position: secret, start: new Date() };
+    public currentJob: IJob = { name: secret, position: secret, start: new Date(), stack: [] };
 
     constructor() {
         this.placeOfLiving = environment.placeOfLiving;
@@ -25,5 +26,19 @@ export class AboutMeComponent {
         const diffInYears = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
 
         return diffInYears;
+    }
+
+    public get stack(): string {
+        const stackLength = this.currentJob.stack.length;
+
+        if (stackLength == 0) {
+            return Stack.dotnet;
+        } else if (stackLength == 1) {
+            return this.currentJob.stack[0];
+        }
+
+        const everyTechButLast = this.currentJob.stack.slice(0, stackLength - 1);
+        let stackList = everyTechButLast.join(', ');
+        return `${stackList} and ${this.currentJob.stack[stackLength - 1]}`;
     }
 }

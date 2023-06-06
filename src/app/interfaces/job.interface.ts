@@ -1,4 +1,5 @@
 import { Images } from '../enums/images.enum';
+import { Stack } from '../enums/stack.enum';
 
 export interface IJob {
     name: string;
@@ -6,4 +7,5 @@ export interface IJob {
     //picture: Images;
     start: Date;
     end?: Date;
+    stack: Stack[];
 }

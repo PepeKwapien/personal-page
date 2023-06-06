@@ -5,13 +5,16 @@
     min-height: 17rem;
     justify-content: center;
     align-content: center;
-    margin: 5rem auto 4rem;
+    margin: 5rem auto 2rem;
     display: grid;
     column-gap: 2.5em;
     grid-template-columns: min-content max-content;
     grid-template-areas:
         'img title'
         'img subtitle';
+    scroll-snap-type: mandatory;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .aboutme-picture {
@@ -51,6 +54,8 @@
     background-position: bottom;
     background-blend-mode: multiply;
     background-color: hsl(0, 0%, 25%);
+    padding: 2rem 0;
+    box-shadow: $box-shadow;
 }
 
 .aboutme-innerbody-container {
@@ -59,7 +64,7 @@
     margin: 0 auto;
     background-color: hsla(0, 0%, 10%, 85%);
     border-radius: 20px;
-    box-shadow: $box-shadow-subtle;
+    box-shadow: $box-shadow-strong;
 }
 
 @media (max-width: $small-boundary) {

@@ -16,6 +16,10 @@
     background-color: hsl(0, 0%, 45%);
 
     box-shadow: $box-shadow;
+
+    scroll-snap-type: mandatory;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .section-header-message {
