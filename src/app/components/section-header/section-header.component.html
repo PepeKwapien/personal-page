@@ -1,4 +1,6 @@
-<div class="section-container container-width" [ngStyle]="{ 'background-image': 'url(' + backgroundImage + ')' }">
-    <span class="section-greeting move-down" *ngIf="showGreeting">{{ greeting }}</span>
-    <h1 class="section-header-message">{{ sectionHeaderMessage }}</h1>
+<div class="section-header-container container-width">
+    <img class="section-picture blur" [src]="image" alt="Picutre of me" />
+    <h2 class="section-title blur hide-right">{{ title }}</h2>
+    <span class="section-subtitle blur hide-right">{{ subtitle }}</span>
 </div>
+

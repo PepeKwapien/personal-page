@@ -1,67 +1,72 @@
-@import '../../../styles/mixins';
 @import '../../../styles/variables';
 
-.section-container {
-    min-height: 100vh;
-    display: flex;
+.section-header-container {
+    overflow-x: hidden;
+    min-height: 17rem;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
+    margin: 5rem auto 2rem;
+    display: grid;
+    column-gap: 2.5em;
+    grid-template-columns: min-content max-content;
+    grid-template-areas:
+        'img title'
+        'img subtitle';
+}
 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-blend-mode: multiply;
-    background-color: hsl(0, 0%, 45%);
-
+.section-picture {
+    border-radius: 50%;
+    height: 15rem;
+    grid-area: img;
+    z-index: 2;
     box-shadow: $box-shadow;
-
-    scroll-snap-type: mandatory;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 
-.section-header-message {
-    background-color: var(--section-header-message-background);
-    color: var(--section-header-message-color);
-    box-shadow: $box-shadow-strong;
-    text-shadow: $box-shadow-strong;
+.section-title {
+    text-transform: capitalize;
+    grid-area: title;
+    align-self: end;
+    text-shadow: $box-shadow-subtle;
 }
 
-.section-greeting {
+.section-subtitle {
     position: relative;
-    color: var(--section-header-message-color);
-    @include header($greeting-fs-large, 0.1em, 0.1em);
-    text-shadow: $box-shadow-strong;
-}
-
-@media (max-width: $medium-boundary) {
-    .section-container {
-        min-height: 50vh;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-    }
-
-    .section-greeting {
-        position: relative;
-        color: var(--section-header-message-color);
-        @include header($greeting-fs-medium, 0.1em, 0.1em);
-        text-shadow: $box-shadow-strong;
-    }
+    grid-area: subtitle;
+    background-color: hsl(214, 76%, 67%);
+    font-size: 1.5rem;
+    max-height: 1.8em;
+    padding: 0.2em 0.4em;
+    text-align: right;
+    left: -18rem;
+    width: calc(100% + 18rem);
+    border-radius: 5px;
+    box-shadow: $box-shadow-subtle;
 }
 
 @media (max-width: $small-boundary) {
-    .section-greeting {
-        position: relative;
-        color: var(--section-header-message-color);
-        @include header($greeting-fs-small, 0.1em, 0.1em);
-        text-shadow: $box-shadow-strong;
-    }
-}
+    .section-header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: fit-content;
+        padding: 2rem 0;
 
-h1 {
-    z-index: 1;
+        margin: 1rem auto 1rem;
+    }
+
+    .section-title {
+        text-transform: capitalize;
+        align-self: center;
+    }
+
+    .section-subtitle {
+        position: static;
+        font-size: 1.5rem;
+        max-height: 1.8em;
+        padding: 0.2em 0.4em;
+        text-align: center;
+        border-radius: 5px;
+        width: calc(100% - 6rem);
+    }
 }
