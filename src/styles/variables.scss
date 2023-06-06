@@ -2,10 +2,25 @@
     --section-header-message-background: hsl(240, 50%, 45%);
     --section-header-message-color: hsl(0, 0%, 85%);
     --box-shadow: 0 0 20px hsl(0, 0, 0%, 0.65);
-
-    --paragraph-fs: 1.7rem;
 }
 
+// media queries boundaries
+$medium-boundary: 780px;
+$small-boundary: 540px;
+
+// typography
+$h1-fs-large: 4.5rem;
+$h1-fs-medium: 3rem;
+$h1-fs-small: 2.5rem;
+$h2-fs-large: 4rem;
+$h2-fs-medium: 2.5rem;
+$h2-fs-small: 2rem;
+$greeting-fs-large: 2.5rem;
+$greeting-fs-medium: 1.8rem;
+$greeting-fs-small: 1.4rem;
+$paragraph-fs-large: 1.7rem;
+$paragraph-fs-medium: 1.5rem;
+$paragraph-fs-small: 1.3rem;
 $box-shadow: 2px 2px 20px hsl(0, 0, 0%, 0.75);
 $box-shadow-subtle: 5px 5px 5px hsl(0, 0, 0%, 0.3);
 $box-shadow-strong: 7px 7px 3px hsl(0, 0, 0%, 0.3);

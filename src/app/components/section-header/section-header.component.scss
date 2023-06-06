@@ -26,8 +26,34 @@
 .section-greeting {
     position: relative;
     color: var(--section-header-message-color);
-    @include header(2.5rem, 0.1em, 0.1em);
+    @include header($greeting-fs-large, 0.1em, 0.1em);
     text-shadow: $box-shadow-strong;
+}
+
+@media (max-width: $medium-boundary) {
+    .section-container {
+        min-height: 50vh;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .section-greeting {
+        position: relative;
+        color: var(--section-header-message-color);
+        @include header($greeting-fs-medium, 0.1em, 0.1em);
+        text-shadow: $box-shadow-strong;
+    }
+}
+
+@media (max-width: $small-boundary) {
+    .section-greeting {
+        position: relative;
+        color: var(--section-header-message-color);
+        @include header($greeting-fs-small, 0.1em, 0.1em);
+        text-shadow: $box-shadow-strong;
+    }
 }
 
 h1 {

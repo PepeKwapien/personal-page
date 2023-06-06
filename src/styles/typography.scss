@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import './mixins.scss';
+@import './variables.scss';
 
 *,
 *::after,
@@ -9,18 +10,47 @@
 }
 
 h1 {
-    @include header(4.5rem, 0.3em, 0.2em);
+    @include header($h1-fs-large, 0.3em, 0.2em);
+    transition: 0.15s;
 }
 
 h2 {
-    @include header(4rem, 0, 0);
+    @include header($h2-fs-large, 0, 0);
 }
 
 .paragraph-text {
     color: var(--section-header-message-color);
-    font-size: var(--paragraph-fs);
+    font-size: $paragraph-fs-large;
     text-align: justify;
     text-justify: inter-word;
+}
+
+@media (max-width: $medium-boundary) {
+    h1 {
+        @include header($h1-fs-medium, 0.3em, 0.2em);
+    }
+
+    h2 {
+        @include header($h2-fs-medium, 0, 0);
+    }
+
+    .paragraph-text {
+        font-size: $paragraph-fs-medium;
+    }
+}
+
+@media (max-width: $small-boundary) {
+    h1 {
+        @include header($h1-fs-small, 0.3em, 0.2em);
+    }
+
+    h2 {
+        @include header($h2-fs-small, 0, 0);
+    }
+
+    .paragraph-text {
+        font-size: $paragraph-fs-small;
+    }
 }
 
 .paragraph {
