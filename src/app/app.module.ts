@@ -7,9 +7,10 @@ import { LandingComponent } from './components/landing/landing.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SectionHeaderComponent } from './components/section-header/section-header.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
-    declarations: [AppComponent, LandingComponent, NavbarComponent, AboutMeComponent, SectionHeaderComponent],
+    declarations: [AppComponent, LandingComponent, NavbarComponent, AboutMeComponent, SectionHeaderComponent, SkillsComponent],
     imports: [BrowserModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
