@@ -3,7 +3,7 @@
 .aboutme-header-container {
     width: clamp(45ch, 70%, 75ch);
     justify-content: center;
-    margin: 4rem auto 1.5rem;
+    margin: 5rem auto 4rem;
     display: grid;
     column-gap: 2.5em;
     grid-template-columns: min-content max-content;
@@ -58,4 +58,30 @@
     background-color: hsla(0, 0%, 10%, 85%);
     border-radius: 20px;
     box-shadow: $box-shadow-subtle;
+}
+
+@media (max-width: $small-boundary) {
+    .aboutme-header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: clamp(45ch, 70%, 75ch);
+        margin: 2rem auto 2rem;
+    }
+
+    .aboutme-title {
+        text-transform: capitalize;
+        align-self: center;
+    }
+
+    .aboutme-subtitle {
+        position: static;
+        font-size: 1.5rem;
+        max-height: 1.8em;
+        padding: 0.2em 0.4em;
+        text-align: center;
+        border-radius: 5px;
+        width: calc(100% - 6rem);
+    }
 }
