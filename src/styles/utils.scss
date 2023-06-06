@@ -1,3 +1,14 @@
+@import './variables';
+
+.card-width {
+    width: clamp(40ch, 65%, 75ch);
+}
+
+.container-width {
+    width: clamp(40ch, 100%, 100%);
+}
+
+// animations on scroll
 .blur {
     filter: blur(10px);
     transition: all 0.7s;
@@ -29,7 +40,14 @@
 
 @media (prefers-reducted-motion) {
     .hidden,
-    .hide-right {
+    .hide-right,
+    .move-down {
         transition: none;
+    }
+}
+
+@media (max-width: $verysmall-boundary) {
+    .card-width {
+        width: clamp(25h, 50%, 50ch);
     }
 }

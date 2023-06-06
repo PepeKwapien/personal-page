@@ -64,3 +64,17 @@ h2 {
         font-size: $paragraph-fs-small;
     }
 }
+
+@media (max-width: $verysmall-boundary) {
+    h1 {
+        @include header($h1-fs-verysmall, 0.3em, 0.2em);
+    }
+
+    h2 {
+        @include header($h2-fs-verysmall, 0, 0);
+    }
+
+    .paragraph-text {
+        font-size: $paragraph-fs-verysmall;
+    }
+}
