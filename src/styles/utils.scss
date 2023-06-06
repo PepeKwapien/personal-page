@@ -24,7 +24,13 @@
     transition: all 0.7s;
 }
 
-.show-right {
+.hide-left {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.7s;
+}
+
+.show-horizontal {
     opacity: 1;
     transform: translateX(0);
 }
