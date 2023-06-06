@@ -10,7 +10,7 @@
 .hide-right {
     opacity: 0;
     transform: translateX(50%);
-    transition: all 0.8s;
+    transition: all 0.7s;
 }
 
 .show-right {
@@ -20,7 +20,7 @@
 
 .move-down {
     transform: translateY(100%);
-    transition: all 1.2s;
+    transition: all 0.7s 0.2s;
 }
 
 .move-up {
