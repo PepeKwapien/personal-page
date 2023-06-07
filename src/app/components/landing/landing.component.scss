@@ -23,15 +23,15 @@
 }
 
 .section-header-message {
-    background-color: $section-header-message-background;
-    color: $section-header-message-color;
+    background-color: $landing-message-background;
+    color: $light-color;
     box-shadow: $box-shadow-strong;
     text-shadow: $box-shadow-strong;
 }
 
 .section-greeting {
     position: relative;
-    color: $section-header-message-color;
+    color: $light-color;
     @include header($greeting-fs-large, 0.1em, 0.1em);
     text-shadow: $box-shadow-strong;
 }
@@ -47,7 +47,7 @@
 
     .section-greeting {
         position: relative;
-        color: $section-header-message-color;
+        color: $light-color;
         @include header($greeting-fs-medium, 0.1em, 0.1em);
         text-shadow: $box-shadow-strong;
     }
@@ -56,7 +56,7 @@
 @media (max-width: $small-boundary) {
     .section-greeting {
         position: relative;
-        color: $section-header-message-color;
+        color: $light-color;
         @include header($greeting-fs-small, 0.1em, 0.1em);
         text-shadow: $box-shadow-strong;
     }
@@ -65,7 +65,7 @@
 @media (max-width: $verysmall-boundary) {
     .section-greeting {
         position: relative;
-        color: $section-header-message-color;
+        color: $light-color;
         @include header($greeting-fs-verysmall, 0.1em, 0.1em);
         text-shadow: $box-shadow-strong;
     }
