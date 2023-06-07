@@ -5,7 +5,6 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,6 +15,10 @@ h1 {
 
 h2 {
     @include header($h2-fs-large, 0, 0);
+}
+
+h3 {
+    @include header($h3-fs-large, 0, 0);
 }
 
 .paragraph-text {
@@ -46,6 +49,10 @@ h2 {
         @include header($h2-fs-medium, 0, 0);
     }
 
+    h3 {
+        @include header($h3-fs-medium, 0, 0);
+    }
+
     .paragraph-text {
         font-size: $paragraph-fs-medium;
     }
@@ -60,6 +67,10 @@ h2 {
         @include header($h2-fs-small, 0, 0);
     }
 
+    h3 {
+        @include header($h3-fs-small, 0, 0);
+    }
+
     .paragraph-text {
         font-size: $paragraph-fs-small;
     }
@@ -72,6 +83,10 @@ h2 {
 
     h2 {
         @include header($h2-fs-verysmall, 0, 0);
+    }
+
+    h3 {
+        @include header($h3-fs-verysmall, 0, 0);
     }
 
     .paragraph-text {

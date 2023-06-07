@@ -1,6 +1,9 @@
 // colors
 $landing-message-background: hsl(240, 50%, 45%);
 $light-color: hsl(0, 0%, 85%);
+$blue-theme-color: hsl(214, 76%, 67%);
+$blue-theme-color-transparent: hsl(214, 76%, 67%, 0.5);
+$dark-card-background: hsla(0, 0%, 10%, 85%);
 
 // media queries boundaries
 $medium-boundary: 780px;
@@ -14,9 +17,14 @@ $h1-fs-small: 2.5rem;
 $h1-fs-verysmall: 2rem;
 
 $h2-fs-large: 4rem;
-$h2-fs-medium: 2.5rem;
+$h2-fs-medium: 2.8rem;
 $h2-fs-small: 2rem;
 $h2-fs-verysmall: 1.5rem;
+
+$h3-fs-large: 1.8rem;
+$h3-fs-medium: 1.6rem;
+$h3-fs-small: 1.4rem;
+$h3-fs-verysmall: 1.2rem;
 
 $greeting-fs-large: 2.5rem;
 $greeting-fs-medium: 1.8rem;
@@ -28,6 +36,8 @@ $paragraph-fs-medium: 1.5rem;
 $paragraph-fs-small: 1.3rem;
 $paragraph-fs-verysmall: 1.1rem;
 
-$box-shadow: 2px 2px 20px hsl(0, 0, 0%, 0.75);
-$box-shadow-subtle: 5px 5px 5px hsl(0, 0, 0%, 0.3);
-$box-shadow-strong: 7px 7px 3px hsl(0, 0, 0%, 0.3);
+$box-shadow: 2px 2px 20px hsl(0, 1%, 1%, 0.75);
+$box-shadow-subtle: 5px 5px 5px hsl(0, 1%, 1%, 0.3);
+$box-shadow-strong: 7px 7px 3px hsl(0, 1%, 1%, 0.3);
+
+$skills-border-width: 0.23rem;

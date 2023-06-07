@@ -1,4 +1,4 @@
-@import '../../../styles/variables';
+@import '/src/styles/variables';
 
 .aboutme-body-container {
     background-image: url('/assets/images/florence.jpg');
@@ -15,7 +15,7 @@
 .aboutme-innerbody-container {
     height: 100%;
     margin: 0 auto;
-    background-color: hsla(0, 0%, 10%, 85%);
+    background-color: $dark-card-background;
     border-radius: 20px;
     box-shadow: $box-shadow-strong;
 }
