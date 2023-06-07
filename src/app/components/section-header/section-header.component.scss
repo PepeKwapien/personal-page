@@ -5,7 +5,7 @@
     min-height: 17rem;
     justify-content: center;
     align-content: center;
-    margin: 5rem auto 2rem;
+    margin: 3rem auto 2rem;
     display: grid;
     column-gap: 2.5em;
     grid-template-columns: min-content max-content;
@@ -38,6 +38,7 @@
 }
 
 .section-subtitle {
+    text-transform: capitalize;
     position: relative;
     grid-area: subtitle;
     background-color: hsl(214, 76%, 67%);
