@@ -1,0 +1,24 @@
+div {
+    min-height: 0.8rem;
+    border-radius: 15px;
+}
+
+.outer-bar {
+    border: 2px red solid;
+    margin: 1rem 2rem;
+}
+
+.progress-background {
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        hsl(100, 100%, 20%),
+        hsl(100, 100%, 50%),
+        hsl(71, 100%, 50%),
+        hsl(0, 100%, 50%),
+        hsl(256, 100%, 50%),
+        hsl(183, 100%, 50%)
+    );
+    background-size: 100%;
+    background-attachment: fixed;
+}
