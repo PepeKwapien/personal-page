@@ -7,6 +7,7 @@ div {
 .outer-bar {
     border: 2px gray solid;
     margin: 1rem 2rem;
+    box-shadow: $box-shadow-ligth-subtle;
 }
 
 .progress-background {
@@ -16,10 +17,11 @@ div {
         rgba(0, 255, 16, 1) 40%,
         rgba(232, 255, 0, 1) 55%,
         rgba(255, 0, 0, 1) 60%,
-        rgba(0, 31, 255, 1) 82%,
+        rgb(200, 0, 255) 82%,
         rgba(231, 0, 255, 1) 100%
     );
-    background-size: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     transition: all 0.8s;
 }

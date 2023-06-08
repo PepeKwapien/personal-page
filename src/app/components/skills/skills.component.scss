@@ -2,7 +2,8 @@
 
 .skills-background {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -12,26 +13,29 @@
     background-color: hsl(0, 0%, 25%);
 }
 
+.skills-container {
+    padding: 4rem 0;
+}
+
 .skills-header {
     position: relative;
     top: $skills-border-width;
     width: fit-content;
-    border-radius: 60% 15% 0 0;
     border-style: solid;
     border-bottom: none;
     border-width: $skills-border-width;
 }
 
 .skill-header-name-padding {
-    padding: 1em 2.5em;
+    padding: 1em 4rem;
 }
 
 .skills-header-border {
-    border-color: $blue-theme-color-transparent;
+    border-color: $dark-blue-theme-color-transparent;
 }
 
 .skills-border {
-    border-color: $blue-theme-color-transparent;
+    border-color: $dark-blue-theme-color-transparent;
     border-style: solid;
     border-width: $skills-border-width;
 }
@@ -40,13 +44,32 @@
 
 .skills-technical-background {
     background-image: url('/assets/images/technical.jpg');
+    text-shadow: $box-shadow-ligth-subtle;
+    position: relative;
 }
 
-.skills-technical-container {
-    padding-top: 2rem;
+.skills-technical-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to bottom, $body-background, transparent);
+}
+
+.skills-technical-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.823), transparent);
 }
 
 .skills-technical-header {
+    border-radius: 60% 10% 0 0;
     color: $light-color;
     background-color: $dark-card-background;
 }
@@ -55,6 +78,7 @@
     padding: 2rem 0;
     background-color: $dark-card-background;
     border-radius: 0% 5% 5% 5%;
+    box-shadow: $box-shadow-ligth-subtle;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -68,6 +92,65 @@
     padding-left: 4rem;
 }
 
+// Skills personal
+
+.skills-personal-background {
+    position: relative;
+
+    background-image: url('/assets/images/personal.jpg');
+    text-shadow: $box-shadow-subtle;
+}
+
+.skills-personal-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.823), transparent);
+}
+
+.skills-personal-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to top, $body-background, transparent);
+}
+
+.skills-personal-header {
+    border-color: $blue-theme-color-transparent;
+    margin-left: auto;
+    border-radius: 10% 60% 0 0;
+    color: $dark-color;
+    background-color: $light-card-background;
+}
+
+.skills-personal-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: $box-shadow-strong;
+
+    border-color: $blue-theme-color-transparent;
+    padding: 2rem 4rem;
+    color: $dark-color;
+    background-color: $light-card-background;
+    border-radius: 5% 0% 5% 5%;
+}
+
+.iam {
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+
+li {
+    margin-top: 0.8rem;
+    list-style: circle;
+}
+
 @media (max-width: $small-boundary) {
     .skill-header-name-padding {
         padding: 0.5em 1.5em;
@@ -75,5 +158,11 @@
 
     .skill-name {
         padding-left: 2rem;
+    }
+
+    .skills-personal-body {
+        padding: 2rem 0;
+        padding-left: 2rem;
+        column-gap: 2rem;
     }
 }

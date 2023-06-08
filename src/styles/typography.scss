@@ -21,11 +21,17 @@ h3 {
     @include header($h3-fs-large, 0, 0);
 }
 
-.paragraph-text {
+.text-light {
     color: $light-color;
+}
+
+.text-dark {
+    color: $dark-color;
+}
+
+.paragraph-text {
     font-size: $paragraph-fs-large;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .paragraph {

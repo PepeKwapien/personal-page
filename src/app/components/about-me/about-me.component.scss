@@ -1,6 +1,8 @@
 @import '/src/styles/variables';
 
 .aboutme-body-container {
+    position: relative;
+
     background-image: url('/assets/images/florence.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8,8 +10,27 @@
     background-position: bottom;
     background-blend-mode: multiply;
     background-color: hsl(0, 0%, 25%);
-    padding: 2rem 0;
-    box-shadow: $box-shadow;
+    padding: 3rem 0;
+}
+
+.aboutme-body-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to bottom, $body-background, transparent);
+}
+
+.aboutme-body-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to top, $body-background, transparent);
 }
 
 .aboutme-innerbody-container {

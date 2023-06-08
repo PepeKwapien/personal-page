@@ -2,6 +2,8 @@
 @import '/src/styles/variables';
 
 .section-container {
+    position: relative;
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,11 +17,19 @@
     background-blend-mode: multiply;
     background-color: hsl(0, 0%, 45%);
 
-    box-shadow: $box-shadow;
-
     scroll-snap-type: mandatory;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+.section-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to top, $body-background, transparent);
 }
 
 .section-header-message {
@@ -37,14 +47,6 @@
 }
 
 @media (max-width: $medium-boundary) {
-    .section-container {
-        min-height: 98vh;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-    }
-
     .section-greeting {
         position: relative;
         color: $light-color;
