@@ -5,7 +5,10 @@
             <h3 class="blur skill-header-name-padding">Technical</h3>
         </div>
         <div class="skills-technical-body skills-border">
-            <app-progress-bar [progress]="100"></app-progress-bar>
+            <ng-container *ngFor="let skill of skills"
+                ><span class="paragraph-text skill-name">{{ skill.stack }}</span
+                ><app-progress-bar [progress]="skill.level"></app-progress-bar
+            ></ng-container>
         </div>
     </div>
 </div>

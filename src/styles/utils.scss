@@ -44,6 +44,10 @@
     transform: translateY(0);
 }
 
+.zero-width {
+    width: 0 !important;
+}
+
 @media (prefers-reducted-motion) {
     .hidden,
     .hide-right,

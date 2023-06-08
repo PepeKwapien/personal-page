@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Stack } from 'src/app/enums/stack.enum';
-import { jobHistory } from 'src/app/helpers/job-collection.helper';
+import { jobHistory } from 'src/app/helpers/job.collection';
 import { secret } from 'src/app/helpers/secret.helper';
 import { IJob } from 'src/app/interfaces/job.interface';
 import { environment } from 'src/environments/environment';
