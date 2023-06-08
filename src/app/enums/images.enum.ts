@@ -3,5 +3,6 @@ export enum Images {
     aboutme = '/assets/images/aboutme.jpg',
     skills = '/assets/images/skills.jpg',
     technical = '/assets/images/technical.jpg',
-    personal = '/assets/images/personal.jpg'
+    personal = '/assets/images/personal.jpg',
+    experience = '/assets/images/experience.jpg'
 }

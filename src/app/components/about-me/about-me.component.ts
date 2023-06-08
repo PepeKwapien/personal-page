@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AboutMeComponent {
     public placeOfLiving: string = secret;
-    public currentJob: IJob = { name: secret, position: secret, start: new Date(), stack: [] };
+    public currentJob: IJob = { name: secret, position: secret, start: new Date(), stack: [], city: secret };
 
     constructor() {
         this.placeOfLiving = environment.placeOfLiving;
