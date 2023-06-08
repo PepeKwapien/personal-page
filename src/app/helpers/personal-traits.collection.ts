@@ -5,7 +5,7 @@ export const personalTraits: string[] = [
     'determined 📈',
     'a careful listener 👂',
     'reliable 🔐',
-    'can-do attitude 🤠',
+    'a can-do approacher 🤠',
     'a fast learner 📚',
     'open-minded 🤯'
 ];
