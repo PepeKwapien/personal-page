@@ -1,3 +1,4 @@
+@import '/src/styles/variables';
 div {
     min-height: 0.8rem;
     border-radius: 15px;
@@ -21,4 +22,11 @@ div {
     background-size: 100%;
     background-attachment: fixed;
     transition: all 0.8s;
+}
+
+@media (max-width: $small-boundary) {
+    .outer-bar {
+        border: 2px gray solid;
+        margin: 0.2rem 0.5rem;
+    }
 }
