@@ -6,8 +6,8 @@ export const jobHistory: IJob[] = [
     {
         company: 'Canon Ophthalmic Technologies',
         positions: [
-            { name: 'Fullstack Developer & Team Lead', start: new Date(2022, 3, 1) },
-            { name: 'Fullstack Developer', start: new Date(2022, 9, 1), end: new Date(2022, 2, 31) }
+            { name: 'Fullstack Developer & Team Lead' },
+            { name: 'Fullstack Developer', start: new Date(2022, 9, 1), end: new Date(2023, 3, 1) }
         ],
         image: Images.canon,
         stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],

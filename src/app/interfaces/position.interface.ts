@@ -1,5 +1,5 @@
 export interface IPosition {
-    start: Date;
+    start?: Date;
     end?: Date;
     name: string;
 }

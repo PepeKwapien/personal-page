@@ -38,10 +38,10 @@ img {
 .positions::before {
     position: absolute;
     content: '';
-    top: 0.3rem;
+    top: 5%;
     left: -1.5rem;
     width: 0.2rem;
-    height: 95%;
+    height: 90%;
     background-color: $light-color;
 }
 
@@ -49,8 +49,8 @@ img {
     position: relative;
     display: grid;
     grid-template-areas:
-        'start position-name'
-        'end position-name';
+        'end position-name'
+        'start position-name';
     grid-template-columns: 1fr 2fr;
     row-gap: 2rem;
     column-gap: 0.4rem;
@@ -63,43 +63,58 @@ img {
 .position + .position::before {
     position: absolute;
     top: -2rem;
-    left: 10%;
-    width: 80%;
+    left: 36%;
+    width: 60%;
     content: '';
     border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
     filter: blur(1px);
 }
 
-.start-date {
-    grid-area: start;
+.date-text {
+    font-size: 0.9rem;
+}
+
+.end-date {
+    @extend .date-text;
+    grid-area: end;
     position: relative;
+}
+
+$date-point-left: -1.8rem;
+$date-point-size: 0.8rem;
+$date-point-y: 0.3rem;
+
+.end-date::before {
+    position: absolute;
+    content: '';
+    top: $date-point-y;
+    left: $date-point-left;
+    width: $date-point-size;
+    height: $date-point-size;
+    background-color: $light-color;
+    border-radius: 50%;
+}
+
+.position-end {
+    top: -2.6rem;
+}
+
+.start-date {
+    @extend .date-text;
+
+    position: relative;
+    grid-area: start;
+    display: flex;
+    align-items: end;
 }
 
 .start-date::before {
     position: absolute;
     content: '';
-    top: 0.3rem;
-    left: -1.8rem;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: $light-color;
-    border-radius: 50%;
-}
-
-.end-date {
-    position: relative;
-    grid-area: end;
-    display: flex;
-    align-items: end;
-}
-
-.end-date::before {
-    position: absolute;
-    content: '';
-    bottom: 0.3rem;
-    left: -1.8rem;
-    width: 0.8rem;
-    height: 0.8rem;
+    bottom: $date-point-y;
+    left: $date-point-left;
+    width: $date-point-size;
+    height: $date-point-size;
     background-color: $light-color;
     border-radius: 50%;
 }
@@ -111,4 +126,65 @@ img {
     font-weight: 1000;
     text-align: center;
     overflow-wrap: break-word;
+}
+
+@media (max-width: $medium-boundary) {
+    img {
+        width: 7rem;
+    }
+
+    .position-name {
+        font-size: 1.1rem;
+    }
+
+    .company {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+
+    .date-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: $small-boundary) {
+    img {
+        width: 5rem;
+    }
+
+    .company {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .experience-item-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .company {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        column-gap: 1.1rem;
+    }
+
+    .position-name {
+        font-size: 1rem;
+    }
+
+    .position-name {
+        grid-area: position-name;
+        align-self: center;
+        font-size: 1em;
+        font-weight: 800;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .date-text {
+        font-size: 0.7rem;
+    }
 }

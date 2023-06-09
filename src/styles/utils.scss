@@ -51,7 +51,8 @@
 @media (prefers-reducted-motion) {
     .hidden,
     .hide-right,
-    .move-down {
+    .move-down,
+    .move-up {
         transition: none;
     }
 }
