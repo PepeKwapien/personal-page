@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Images } from 'src/app/enums/images.enum';
 import { Stack } from 'src/app/enums/stack.enum';
 import { jobHistory } from 'src/app/helpers/job.collection';
 import { secret } from 'src/app/helpers/secret.helper';
@@ -12,7 +13,13 @@ import { environment } from 'src/environments/environment';
 })
 export class AboutMeComponent {
     public placeOfLiving: string = secret;
-    public currentJob: IJob = { name: secret, position: secret, start: new Date(), stack: [], city: secret };
+    public currentJob: IJob = {
+        company: secret,
+        positions: [{ name: secret, start: new Date() }],
+        stack: [],
+        city: secret,
+        image: Images.canon
+    };
 
     constructor() {
         this.placeOfLiving = environment.placeOfLiving;

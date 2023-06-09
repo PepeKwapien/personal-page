@@ -1,35 +1,31 @@
+import { Images } from '../enums/images.enum';
 import { Stack } from '../enums/stack.enum';
 import { IJob } from '../interfaces/job.interface';
 
 export const jobHistory: IJob[] = [
     {
-        name: 'Canon Ophthalmic Technologies',
-        position: 'Fullstack Developer & Team Lead',
-        start: new Date(2022, 4, 1),
+        company: 'Canon Ophthalmic Technologies',
+        positions: [
+            { name: 'Fullstack Developer & Team Lead', start: new Date(2022, 3, 1) },
+            { name: 'Fullstack Developer', start: new Date(2022, 9, 1), end: new Date(2022, 2, 31) }
+        ],
+        image: Images.canon,
         stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],
-        city: 'Wrocław'
+        city: 'Breslau'
     },
     {
-        name: 'Canon Ophthalmic Technologies',
-        position: 'Fullstack Developer',
-        start: new Date(2022, 10, 1),
+        company: 'Netcompany',
+        positions: [{ name: 'Consultant & Software Engineer', start: new Date(2022, 3, 1), end: new Date(2022, 8, 30) }],
+
+        image: Images.netcompany,
         stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],
-        city: 'Wrocław'
+        city: 'Warsaw'
     },
     {
-        name: 'Netcompany',
-        position: 'Fullstack Developer',
-        start: new Date(2022, 4, 1),
-        end: new Date(2022, 9, 31),
+        company: 'Unit4',
+        positions: [{ name: 'Software Engineer Intern', start: new Date(2021, 5, 14), end: new Date(2021, 11, 31) }],
+        image: Images.unit4,
         stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],
-        city: 'Warszawa'
-    },
-    {
-        name: 'Unit4',
-        position: 'Software Engineer Intern',
-        start: new Date(2021, 6, 14),
-        end: new Date(2022, 12, 31),
-        stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],
-        city: 'Wrocław'
+        city: 'Breslau'
     }
 ];

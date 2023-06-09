@@ -9,9 +9,10 @@ import { SectionHeaderComponent } from './components/section-header/section-head
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ExperienceItemComponent } from './components/experience/experience-item/experience-item.component';
 
 @NgModule({
-    declarations: [AppComponent, LandingComponent, AboutMeComponent, SectionHeaderComponent, SkillsComponent, ProgressBarComponent, ExperienceComponent],
+    declarations: [AppComponent, LandingComponent, AboutMeComponent, SectionHeaderComponent, SkillsComponent, ProgressBarComponent, ExperienceComponent, ExperienceItemComponent],
     imports: [BrowserModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]

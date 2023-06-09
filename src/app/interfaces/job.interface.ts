@@ -1,11 +1,11 @@
+import { Images } from '../enums/images.enum';
 import { Stack } from '../enums/stack.enum';
+import { IPosition } from './position.interface';
 
 export interface IJob {
-    name: string;
-    position: string;
-    //picture: Images;
-    start: Date;
-    end?: Date;
+    company: string;
+    positions: IPosition[];
+    image: Images;
     stack: Stack[];
     city: string;
 }

@@ -1,0 +1,114 @@
+@import 'src/styles/variables';
+
+.experience-item-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        'company positions'
+        'company positions';
+    padding: 2.5rem;
+    column-gap: 2rem;
+}
+
+img {
+    width: 10rem;
+    border-radius: 50%;
+    grid-area: image;
+}
+
+.company {
+    grid-area: company;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.positions {
+    grid-area: positions;
+    display: grid;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.positions::before {
+    position: absolute;
+    content: '';
+    top: 0.3rem;
+    left: -1.5rem;
+    width: 0.2rem;
+    height: 95%;
+    background-color: $light-color;
+}
+
+.position {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        'start position-name'
+        'end position-name';
+    grid-template-columns: 1fr 2fr;
+    row-gap: 2rem;
+    column-gap: 0.4rem;
+}
+
+.position + .position {
+    margin: 4rem 0 0 0;
+}
+
+.position + .position::before {
+    position: absolute;
+    top: -2rem;
+    left: 10%;
+    width: 80%;
+    content: '';
+    border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
+    filter: blur(1px);
+}
+
+.start-date {
+    grid-area: start;
+    position: relative;
+}
+
+.start-date::before {
+    position: absolute;
+    content: '';
+    top: 0.3rem;
+    left: -1.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $light-color;
+    border-radius: 50%;
+}
+
+.end-date {
+    position: relative;
+    grid-area: end;
+    display: flex;
+    align-items: end;
+}
+
+.end-date::before {
+    position: absolute;
+    content: '';
+    bottom: 0.3rem;
+    left: -1.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $light-color;
+    border-radius: 50%;
+}
+
+.position-name {
+    grid-area: position-name;
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 1000;
+    text-align: center;
+    overflow-wrap: break-word;
+}

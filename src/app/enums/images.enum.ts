@@ -4,5 +4,8 @@ export enum Images {
     skills = '/assets/images/skills.jpg',
     technical = '/assets/images/technical.jpg',
     personal = '/assets/images/personal.jpg',
-    experience = '/assets/images/experience.jpg'
+    experience = '/assets/images/experience.jpg',
+    unit4 = '/assets/images/unit4.jpg',
+    netcompany = '/assets/images/netcompany.jpg',
+    canon = '/assets/images/canon.jpg'
 }

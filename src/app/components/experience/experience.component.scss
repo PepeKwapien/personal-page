@@ -1,0 +1,57 @@
+@import '/src/styles/variables.scss';
+
+.experience-container {
+    position: relative;
+
+    background-image: url('/assets/images/work.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    background-color: hsl(0, 0%, 25%);
+    padding: 3rem 0;
+}
+
+.experience-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to bottom, $body-background, transparent);
+}
+
+.experience-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $transition-height;
+    background-image: linear-gradient(to top, $body-background, transparent);
+}
+
+.experience-innerbody-container {
+    height: 100%;
+    margin: 0 auto;
+    background-color: $dark-card-background;
+    border-radius: 20px;
+    box-shadow: $box-shadow-strong;
+}
+
+.app-experience-item {
+    position: relative;
+}
+
+.app-experience-item + .app-experience-item::before {
+    position: absolute;
+    top: 0rem;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    content: '';
+    border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
+    filter: blur(1px);
+}
