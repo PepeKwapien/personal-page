@@ -1,0 +1,20 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.projects-container {
+    position: relative;
+    height: 100vh;
+    @include section-background('/assets/images/worktable.jpg', top);
+}
+
+.projects-container::before {
+    @include section-before;
+}
+
+.projects-container::after {
+    @include section-after;
+}
+
+.projects-innerbody-container {
+    @include inner-body-dark-card;
+}

@@ -1,4 +1,5 @@
 @import '/src/styles/variables';
+@import '/src/styles/mixins';
 
 .skills-background {
     display: flex;
@@ -49,13 +50,7 @@
 }
 
 .skills-technical-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: $transition-height;
-    background-image: linear-gradient(to bottom, $body-background, transparent);
+    @include section-before;
 }
 
 .skills-technical-background::after {
@@ -112,13 +107,7 @@
 }
 
 .skills-personal-background::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: $transition-height;
-    background-image: linear-gradient(to top, $body-background, transparent);
+    @include section-after;
 }
 
 .skills-personal-header {
