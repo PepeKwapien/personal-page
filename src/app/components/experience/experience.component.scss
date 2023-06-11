@@ -1,9 +1,9 @@
-@import '/src/styles/variables.scss';
-@import '/src/styles/mixins.scss';
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
 
 .experience-container {
     position: relative;
-    @include section-background('assets/images/work.jpg', bottom);
+    @include section-background('../assets/images/work.jpg', bottom);
 }
 
 .experience-container::before {

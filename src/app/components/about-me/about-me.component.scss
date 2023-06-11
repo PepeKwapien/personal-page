@@ -3,7 +3,7 @@
 
 .aboutme-body-container {
     position: relative;
-    @include section-background('assets/images/florence.jpg', bottom);
+    @include section-background('../assets/images/florence.jpg', bottom);
 }
 
 .aboutme-body-container::before {

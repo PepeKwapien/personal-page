@@ -44,9 +44,8 @@
 // Skills technical
 
 .skills-technical-background {
-    background-image: url('assets/images/technical.jpg');
+    @include skills-part-background('../assets/images/technical.jpg');
     text-shadow: $box-shadow-ligth-subtle;
-    position: relative;
 }
 
 .skills-technical-background::before {
@@ -90,9 +89,7 @@
 // Skills personal
 
 .skills-personal-background {
-    position: relative;
-
-    background-image: url('assets/images/personal.jpg');
+    @include skills-part-background('../assets/images/personal.jpg');
     text-shadow: $box-shadow-subtle;
 }
 
