@@ -11,10 +11,15 @@ export enum Images {
     projects = '/assets/images/projects.jpg',
     worktable = '/assets/images/worktable.jpg',
     interests = '/assets/images/interests.jpg',
+
     pokemonbasics = '/assets/images/projects/pokemonbasics.png',
     pepedex = '/assets/images/projects/pepedex.png',
     learnjapanese = '/assets/images/projects/learnjapanese.png',
     mancala = '/assets/images/projects/mancala.jpg',
     tarczynews = '/assets/images/projects/tarczynews.png',
-    personalold = '/assets/images/projects/personalold.png'
+    personalold = '/assets/images/projects/personalold.png',
+
+    linkedin = '/assets/icons/linkedin.png',
+    github = '/assets/icons/github.png',
+    facebook = '/assets/icons/facebook.png'
 }
