@@ -1,3 +1,11 @@
 <app-section-header title="Projects" subtitle="Published code" [image]="image" reverted></app-section-header>
-<div class="projects-container container-width"><div class="projects-innerbody-container card-width"></div></div>
+<div class="projects-container container-width">
+    <div class="projects-innerbody-container card-width">
+        <a [href]="project.link" target="_blank" class="project-item" *ngFor="let project of projects">
+            <img [src]="project.image" class="project-image" />
+            <div class="project-name">{{ project.name }}</div>
+            <div class="project-description">{{ project.description }}</div>
+        </a>
+    </div>
+</div>
 

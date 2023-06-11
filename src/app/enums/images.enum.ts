@@ -9,5 +9,11 @@ export enum Images {
     netcompany = '/assets/images/netcompany.jpg',
     canon = '/assets/images/canon.jpg',
     projects = '/assets/images/projects.jpg',
-    worktable = '/assets/images/worktable.jpg'
+    worktable = '/assets/images/worktable.jpg',
+    pokemonbasics = '/assets/images/projects/pokemonbasics.png',
+    pepedex = '/assets/images/projects/pepedex.png',
+    learnjapanese = '/assets/images/projects/learnjapanese.png',
+    mancala = '/assets/images/projects/mancala.jpg',
+    tarczynews = '/assets/images/projects/tarczynews.png',
+    personalold = '/assets/images/projects/personalold.png'
 }

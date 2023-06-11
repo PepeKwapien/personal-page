@@ -3,7 +3,6 @@
 
 .projects-container {
     position: relative;
-    height: 100vh;
     @include section-background('/assets/images/worktable.jpg', top);
 }
 
@@ -17,4 +16,57 @@
 
 .projects-innerbody-container {
     @include inner-body-dark-card;
+    padding: 2rem 4rem;
+}
+
+.project-item {
+    position: relative;
+    color: $light-color;
+    display: grid;
+    grid-template-areas:
+        'image title'
+        'image description';
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.project-item + .project-item {
+    margin-top: 6rem;
+}
+
+.project-item + .project-item::before {
+    position: absolute;
+    top: -3rem;
+    left: 5%;
+    width: 90%;
+    margin: 0 auto;
+    content: '';
+    border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
+    filter: blur(1px);
+    pointer-events: none;
+}
+
+.project-image {
+    grid-area: image;
+    width: 12rem;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.project-name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    grid-area: title;
+}
+
+.project-description {
+    text-align: center;
+    grid-area: description;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
 }
