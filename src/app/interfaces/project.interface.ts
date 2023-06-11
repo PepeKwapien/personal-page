@@ -5,4 +5,5 @@ export interface IProject {
     description: string;
     image: Images;
     link: string;
+    tags: string[];
 }

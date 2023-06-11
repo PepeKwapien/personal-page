@@ -38,10 +38,10 @@ img {
 .positions::before {
     position: absolute;
     content: '';
-    top: 5%;
+    top: 7%;
     left: -1.5rem;
     width: 0.2rem;
-    height: 90%;
+    height: 85%;
     background-color: $light-color;
 }
 

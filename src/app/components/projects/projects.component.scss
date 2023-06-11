@@ -25,19 +25,20 @@
     display: grid;
     grid-template-areas:
         'image title'
-        'image description';
+        'image description'
+        'image tags';
     grid-template-columns: 1fr 2fr;
     column-gap: 1rem;
     row-gap: 1rem;
 }
 
 .project-item + .project-item {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .project-item + .project-item::before {
     position: absolute;
-    top: -3rem;
+    top: -2rem;
     left: 5%;
     width: 90%;
     margin: 0 auto;
@@ -49,7 +50,7 @@
 
 .project-image {
     grid-area: image;
-    width: 12rem;
+    width: 100%;
     border-radius: 20px;
     align-self: center;
 }
@@ -67,6 +68,61 @@
     font-size: 1.2rem;
 }
 
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+    grid-area: tags;
+    margin-top: 1rem;
+}
+
+.project-tag {
+    padding: 0.3rem;
+    color: $dark-color;
+    background-color: hsla(0, 0%, 100%, 0.815);
+    border-radius: 20px;
+}
+
+.project-tag::before {
+    content: '#';
+}
+
 a {
     text-decoration: none;
+}
+
+@media (max-width: $medium-boundary) {
+    .project-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-name {
+        font-size: 1.35rem;
+    }
+
+    .project-description {
+        font-size: 1.1rem;
+    }
+
+    .project-tag {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: $small-boundary) {
+    .project-name {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .project-tag {
+        font-size: 0.7rem;
+    }
 }
