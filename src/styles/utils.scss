@@ -59,10 +59,10 @@
 
 @media (max-width: $verysmall-boundary) {
     .card-width {
-        width: clamp(25ch, 50%, 50ch);
+        width: clamp(30ch, 50%, 50ch);
     }
 
     .container-width {
-        width: clamp(30ch, 100%, 100%);
+        width: clamp(35ch, 100%, 100%);
     }
 }
