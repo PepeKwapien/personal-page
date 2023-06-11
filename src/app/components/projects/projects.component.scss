@@ -48,6 +48,10 @@
     pointer-events: none;
 }
 
+.project-item:hover .project-image {
+    transform: scale(1.2);
+}
+
 .project-image {
     grid-area: image;
     width: 100%;
@@ -100,6 +104,10 @@ a {
         flex-direction: column;
     }
 
+    .project-image {
+        width: 80%;
+    }
+
     .project-name {
         font-size: 1.35rem;
     }
@@ -114,15 +122,19 @@ a {
 }
 
 @media (max-width: $small-boundary) {
+    .project-image {
+        width: 100%;
+    }
+
     .project-name {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 
     .project-description {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .project-tag {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }

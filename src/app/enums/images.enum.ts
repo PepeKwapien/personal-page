@@ -10,6 +10,7 @@ export enum Images {
     canon = '/assets/images/canon.jpg',
     projects = '/assets/images/projects.jpg',
     worktable = '/assets/images/worktable.jpg',
+    interests = '/assets/images/interests.jpg',
     pokemonbasics = '/assets/images/projects/pokemonbasics.png',
     pepedex = '/assets/images/projects/pepedex.png',
     learnjapanese = '/assets/images/projects/learnjapanese.png',

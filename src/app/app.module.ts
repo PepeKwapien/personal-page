@@ -11,9 +11,10 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ExperienceItemComponent } from './components/experience/experience-item/experience-item.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { InterestsComponent } from './components/interests/interests.component';
 
 @NgModule({
-    declarations: [AppComponent, LandingComponent, AboutMeComponent, SectionHeaderComponent, SkillsComponent, ProgressBarComponent, ExperienceComponent, ExperienceItemComponent, ProjectsComponent],
+    declarations: [AppComponent, LandingComponent, AboutMeComponent, SectionHeaderComponent, SkillsComponent, ProgressBarComponent, ExperienceComponent, ExperienceItemComponent, ProjectsComponent, InterestsComponent],
     imports: [BrowserModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
