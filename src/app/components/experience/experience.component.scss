@@ -3,7 +3,7 @@
 
 .experience-container {
     position: relative;
-    @include section-background('../assets/images/work.jpg', bottom);
+    @include section-background('../assets/images/webp/work.webp', bottom);
 }
 
 .experience-container::before {

@@ -3,7 +3,7 @@
 
 .projects-container {
     position: relative;
-    @include section-background('../assets/images/worktable.jpg', top);
+    @include section-background('../assets/images/webp/worktable.webp', top);
 }
 
 .projects-container::before {

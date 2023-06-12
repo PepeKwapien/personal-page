@@ -3,7 +3,7 @@
 
 .interests-container {
     position: relative;
-    @include section-background('../assets/images/hobbies.jpg', top);
+    @include section-background('../assets/images/webp/hobbies.webp', top);
 }
 
 .interests-container::before {
