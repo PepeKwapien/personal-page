@@ -21,9 +21,10 @@ export class SkillsComponent implements AfterViewInit {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     entry.target.classList.remove('zero-width');
-                } else {
-                    entry.target.classList.add('zero-width');
                 }
+                // else {
+                //     entry.target.classList.add('zero-width');
+                // }
             });
         });
 
