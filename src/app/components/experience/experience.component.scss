@@ -33,3 +33,9 @@
     border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
     filter: blur(1px);
 }
+
+@media (max-width: $medium-boundary) {
+    .experience-container {
+        @include section-background('../assets/images/small/work.png', bottom);
+    }
+}

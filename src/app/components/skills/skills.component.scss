@@ -138,6 +138,16 @@ li {
     list-style: circle;
 }
 
+@media (max-width: $medium-boundary) {
+    .skills-personal-background {
+        @include skills-part-background('../assets/images/small/personal.jpg');
+    }
+
+    .skills-technical-background {
+        @include skills-part-background('../assets/images/small/technical.jpg');
+    }
+}
+
 @media (max-width: $small-boundary) {
     .skill-header-name-padding {
         padding: 0.5em 1.5em;

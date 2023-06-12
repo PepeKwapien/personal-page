@@ -98,6 +98,10 @@ a {
 }
 
 @media (max-width: $medium-boundary) {
+    .projects-container {
+        @include section-background('../assets/images/small/worktable.jpg', top);
+    }
+
     .project-item {
         position: relative;
         display: flex;

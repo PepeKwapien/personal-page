@@ -17,3 +17,9 @@
 .aboutme-innerbody-container {
     @include inner-body-dark-card;
 }
+
+@media (max-width: $medium-boundary) {
+    .aboutme-body-container {
+        @include section-background('../assets/images/small/florence.jpg', bottom);
+    }
+}

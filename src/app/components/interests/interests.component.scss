@@ -63,6 +63,10 @@
     .interests-item {
         font-size: 1.4rem;
     }
+
+    .interests-container {
+        @include section-background('../assets/images/small/hobbies.jpg', top);
+    }
 }
 
 @media (max-width: $small-boundary) {
