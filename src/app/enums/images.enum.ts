@@ -18,6 +18,7 @@ export enum Images {
     mancala = 'assets/images/projects/mancala.jpg',
     tarczynews = 'assets/images/projects/tarczynews.png',
     personalold = 'assets/images/projects/personalold.png',
+    collapp = 'assets/images/projects/collapp.png',
 
     linkedin = 'assets/icons/linkedin.png',
     github = 'assets/icons/github.png',

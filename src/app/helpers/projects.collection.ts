@@ -10,6 +10,29 @@ export const projects: IProject[] = [
         tags: ['.netcore', 'api', 'apicrawler', 'efcore', 'mappers', 'logger', 'tests', 'pokemon']
     },
     {
+        name: 'Collapp (co-creator)',
+        description:
+            'Entire system designed to create workspaces in which people could collaborate and even write their own plugins. Final project for my CS studies with my friends',
+        image: Images.collapp,
+        link: 'https://github.com/collapp-zpi',
+        tags: [
+            'react',
+            'nextjs',
+            'auth',
+            'plugins',
+            'micro-frontends',
+            'bucket',
+            'tailwindcss',
+            'smtp',
+            'postgres',
+            'prisma',
+            'orm',
+            'collaboration',
+            'teamwork',
+            'bachelor'
+        ]
+    },
+    {
         name: 'Learn Japanese',
         description: 'App designed to help you learn and remember Hiragana and Katakana characters',
         image: Images.learnjapanese,
