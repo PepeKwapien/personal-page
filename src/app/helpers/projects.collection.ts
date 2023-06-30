@@ -12,7 +12,7 @@ export const projects: IProject[] = [
     {
         name: 'Collapp (co-creator)',
         description:
-            'Entire system designed to create workspaces in which people could collaborate and even write their own plugins. Final project for my CS studies with my friends',
+            'Entire system designed to create workspaces in which people could collaborate and even write their own plugins. Final project for my CS studies with my friends (most repos are private right now)',
         image: Images.collapp,
         link: 'https://github.com/collapp-zpi',
         tags: [
