@@ -126,6 +126,10 @@ a {
 }
 
 @media (max-width: $small-boundary) {
+    .projects-container {
+        background-attachment: inherit;
+    }
+
     .project-image {
         width: 100%;
     }

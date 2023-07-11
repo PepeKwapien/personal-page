@@ -23,3 +23,9 @@
         @include section-background('../assets/images/small/florence.jpg', bottom);
     }
 }
+
+@media (max-width: $small-boundary) {
+    .aboutme-body-container {
+        background-attachment: inherit;
+    }
+}

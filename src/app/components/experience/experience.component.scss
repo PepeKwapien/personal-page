@@ -39,3 +39,9 @@
         @include section-background('../assets/images/small/work.png', bottom);
     }
 }
+
+@media (max-width: $small-boundary) {
+    .experience-container {
+        background-attachment: inherit;
+    }
+}

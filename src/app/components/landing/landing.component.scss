@@ -52,6 +52,10 @@
 }
 
 @media (max-width: $small-boundary) {
+    .section-container {
+        background-attachment: inherit;
+    }
+
     .section-greeting {
         position: relative;
         color: $light-color;

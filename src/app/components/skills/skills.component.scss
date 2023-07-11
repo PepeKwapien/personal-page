@@ -149,6 +149,10 @@ li {
 }
 
 @media (max-width: $small-boundary) {
+    .skills-background {
+        background-attachment: inherit;
+    }
+
     .skill-header-name-padding {
         padding: 0.5em 1.5em;
     }
