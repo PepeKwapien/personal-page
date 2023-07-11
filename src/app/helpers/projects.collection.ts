@@ -60,12 +60,12 @@ export const projects: IProject[] = [
         image: Images.personalold,
         link: 'https://pepekwapien.github.io/PersonalPage/',
         tags: ['html', 'css', 'js']
-    },
-    {
-        name: 'Tarczynews',
-        description: 'Basic ASP.Net MVC app to keep track of collected Tarczyn caps',
-        image: Images.tarczynews,
-        link: 'https://github.com/PepeKwapien/Tarczynews',
-        tags: ['.netcore', 'mvc', 'identity', 'efcore']
     }
+    // {
+    //     name: 'Tarczynews',
+    //     description: 'Basic ASP.Net MVC app to keep track of collected Tarczyn caps',
+    //     image: Images.tarczynews,
+    //     link: 'https://github.com/PepeKwapien/Tarczynews',
+    //     tags: ['.netcore', 'mvc', 'identity', 'efcore']
+    // }
 ];
