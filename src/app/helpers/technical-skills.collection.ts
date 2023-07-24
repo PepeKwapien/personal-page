@@ -3,16 +3,17 @@ import { ITechnicalSkill } from '../interfaces/technical-skill.interface';
 
 export const technicalSkills: ITechnicalSkill[] = [
     { stack: Stack.dotnet, level: 80 },
-    { stack: Stack.angular, level: 70 },
-    { stack: Stack.docker, level: 40 },
+    { stack: Stack.angular, level: 75 },
+    { stack: Stack.docker, level: 55 },
     { stack: Stack.tsed, level: 50 },
-    { stack: Stack.typescript, level: 72 },
-    { stack: Stack.javascript, level: 72 },
+    { stack: Stack.node, level: 50 },
+    { stack: Stack.typescript, level: 76 },
+    { stack: Stack.javascript, level: 77 },
     { stack: Stack.html, level: 75 },
     { stack: Stack.css, level: 80 },
     { stack: Stack.csharp, level: 90 },
     { stack: Stack.git, level: 63 },
-    { stack: Stack.sql, level: 65 },
+    { stack: Stack.sql, level: 68 },
     { stack: Stack.python, level: 30 }
 ];
 

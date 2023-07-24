@@ -46,6 +46,7 @@
 .skills-technical-background {
     @include skills-part-background('../assets/images/webp/technical.webp');
     text-shadow: $box-shadow-ligth-subtle;
+    background-color: hsl(0, 0%, 15%);
 }
 
 .skills-technical-background::before {

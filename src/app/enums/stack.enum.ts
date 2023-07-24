@@ -3,6 +3,7 @@ export enum Stack {
     docker = 'Docker',
     dotnet = '.Net',
     tsed = 'Ts.ED',
+    node = 'Node.js',
     mariadb = 'MariaDB',
     csharp = 'C#',
     python = 'Python',
