@@ -3,6 +3,13 @@ import { IProject } from '../interfaces/project.interface';
 
 export const projects: IProject[] = [
     {
+        name: 'PokeWeakness',
+        description: 'The one and only place to learn how to beat them all',
+        image: Images.pokeweakness,
+        link: 'https://github.com/PepeKwapien/PokeWeakness',
+        tags: ['angular', 'css', 'html', 'typescript', 'mat-angular', 'modules', 'pokemon']
+    },
+    {
         name: 'Pokemon Basics',
         description: 'Foundation for my future projects related to Pokemons. Includes API Crawler, logger and soon API',
         image: Images.pokemonbasics,

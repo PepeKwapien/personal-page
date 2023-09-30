@@ -12,6 +12,7 @@ export enum Images {
     worktable = 'assets/images/webp/worktable.webp',
     interests = 'assets/images/webp/interests.webp',
 
+    pokeweakness = 'assets/images/projects/pokeweakness.png',
     pokemonbasics = 'assets/images/projects/pokemonbasics.png',
     pepedex = 'assets/images/projects/pepedex.png',
     learnjapanese = 'assets/images/projects/learnjapanese.png',
