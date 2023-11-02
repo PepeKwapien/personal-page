@@ -25,13 +25,12 @@
     color: $light-color;
     text-transform: capitalize;
     text-align: center;
-    text-shadow: $box-shadow-ligth-subtle;
     transition: 0.7s;
 }
 
 .interests-item:hover div {
     transition: 0.7s;
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(3deg);
 }
 
 .interests-item + .interests-item {
@@ -48,15 +47,6 @@
     border: 0.5px hsla(0, 0%, 100%, 0.3) solid;
     filter: blur(1px);
     pointer-events: none;
-}
-
-.interests-item {
-    position: relative;
-    font-size: 1.8rem;
-    color: $light-color;
-    text-transform: capitalize;
-    text-align: center;
-    text-shadow: $box-shadow-ligth-subtle;
 }
 
 @media (max-width: $medium-boundary) {
