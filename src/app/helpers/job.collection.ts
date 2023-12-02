@@ -6,7 +6,8 @@ export const jobHistory: IJob[] = [
     {
         company: 'Canon Ophthalmic Technologies',
         positions: [
-            { name: 'Fullstack Developer & Team Lead' },
+            { name: 'Senior Software Engineer' },
+            { name: 'Fullstack Developer & Team Lead', end: new Date(2023, 10, 1) },
             { name: 'Fullstack Developer', start: new Date(2022, 9, 1), end: new Date(2023, 3, 1) }
         ],
         image: Images.canon,
