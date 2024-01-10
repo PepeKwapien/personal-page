@@ -7,7 +7,8 @@ export const personalTraits: string[] = [
     'reliable 🔐',
     'a can-do approacher 🤠',
     'a fast learner 📚',
-    'open-minded 🤯'
+    'open-minded 🤯',
+    'an analytical thinker 👩‍💻'
 ];
 
 export const personalTraitsOrdered: string[] = personalTraits.sort((a, b) => {
