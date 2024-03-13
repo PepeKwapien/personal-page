@@ -28,9 +28,11 @@
     transition: 0.7s;
 }
 
-.interests-item:hover div {
+.interests-item div {
     transition: 0.7s;
-    transform: scale(1.1) rotate(3deg);
+    &:hover {
+        transform: scale(1.05) rotate(2deg);
+    }
 }
 
 .interests-item + .interests-item {
