@@ -1,5 +1,5 @@
 <div class="section-header-container container-width" [ngClass]="{ 'section-header-container-reverted': reverted }">
-    <img class="section-picture blur" [src]="image" alt="Picutre of me" />
+    <img class="section-picture blur" [ngClass]="{ 'mirror-image': mirrorImage }" [src]="image" alt="Picutre of me" />
     <h2 class="section-title blur" [ngClass]="{ 'hide-left': reverted, 'hide-right': !reverted }">{{ title }}</h2>
     <span
         class="section-subtitle blur"

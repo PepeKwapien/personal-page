@@ -1,5 +1,10 @@
 @import './variables';
 
+.mirror-image {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 .card-width {
     width: clamp(40ch, 65%, 75ch);
 }

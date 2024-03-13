@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Images } from 'src/app/enums/images.enum';
 import { coerceBooleanProperty } from 'src/app/helpers/boolean.helper';
 
@@ -9,6 +9,7 @@ import { coerceBooleanProperty } from 'src/app/helpers/boolean.helper';
 })
 export class SectionHeaderComponent {
     private _reverted: boolean = false;
+    private _mirrorImage: boolean = false;
 
     @Input() title: string = 'About me';
     @Input() subtitle: string = 'Software Engineer';
@@ -19,6 +20,13 @@ export class SectionHeaderComponent {
     }
     set reverted(value: any) {
         this._reverted = coerceBooleanProperty(value);
+    }
+    @Input()
+    get mirrorImage() {
+        return this._mirrorImage;
+    }
+    set mirrorImage(value: any) {
+        this._mirrorImage = coerceBooleanProperty(value);
     }
 
     constructor() {}
