@@ -3,15 +3,22 @@ import { IProject } from '../interfaces/project.interface';
 
 export const projects: IProject[] = [
     {
+        name: 'TwinkleCards✨',
+        description: "Place where it's easier to organize your flashcards and study",
+        image: Images.twinklecards,
+        link: 'https://twinklecards-3108d.web.app/',
+        tags: ['firebase', 'angular', 'realtime', 'css', 'animations', 'html', 'typescript', 'modules', 'flashcards']
+    },
+    {
         name: 'PokeWeakness',
-        description: 'The one and only place to learn how to beat them all',
+        description: 'Project for people that want to be the very best and learn how to beat... and catch them all',
         image: Images.pokeweakness,
         link: 'https://github.com/PepeKwapien/PokeWeakness',
         tags: ['angular', 'css', 'html', 'typescript', 'mat-angular', 'modules', 'pokemon']
     },
     {
         name: 'Pokemon Basics',
-        description: 'Foundation for my future projects related to Pokemons. Includes API Crawler, logger and soon API',
+        description: 'Foundation for my future projects related to Pokemons. Includes API Crawler, logger and API',
         image: Images.pokemonbasics,
         link: 'https://github.com/PepeKwapien/PokemonBasics',
         tags: ['.netcore', 'api', 'apicrawler', 'efcore', 'mappers', 'logger', 'tests', 'pokemon']
@@ -51,7 +58,7 @@ export const projects: IProject[] = [
         description: 'Desktop Encyclopedia for Pokemons',
         image: Images.pepedex,
         link: 'https://github.com/PepeKwapien/pepe-dex',
-        tags: ['python', 'tkinter', 'api']
+        tags: ['python', 'tkinter', 'rest']
     },
     {
         name: 'Mancala',
