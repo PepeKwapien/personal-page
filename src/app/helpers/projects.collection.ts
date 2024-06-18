@@ -6,8 +6,19 @@ export const projects: IProject[] = [
         name: 'TwinkleCards✨',
         description: "Place where it's easier to organize your flashcards and study",
         image: Images.twinklecards,
-        link: 'https://twinklecards-3108d.web.app/',
-        tags: ['firebase', 'angular', 'realtime', 'css', 'animations', 'html', 'typescript', 'modules', 'flashcards']
+        link: 'https://twinklecards.pl',
+        tags: [
+            'firebase',
+            'angular',
+            'realtime',
+            'css',
+            'serverless',
+            'animations',
+            'html',
+            'typescript',
+            'modules',
+            'flashcards'
+        ]
     },
     {
         name: 'PokeWeakness',
