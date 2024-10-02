@@ -2,7 +2,7 @@ import { Stack } from '../enums/stack.enum';
 import { ITechnicalSkill } from '../interfaces/technical-skill.interface';
 
 export const technicalSkills: ITechnicalSkill[] = [
-    { stack: Stack.dotnet, level: 82 },
+    { stack: Stack.dotnet, level: 86 },
     { stack: Stack.angular, level: 90 },
     { stack: Stack.docker, level: 65 },
     { stack: Stack.tsed, level: 60 },
