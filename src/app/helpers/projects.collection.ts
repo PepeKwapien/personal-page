@@ -4,7 +4,7 @@ import { IProject } from '../interfaces/project.interface';
 export const projects: IProject[] = [
     {
         name: 'TwinkleCards✨',
-        description: "Place where it's easier to organize your flashcards and study",
+        description: 'Best place to create, organize and study from your own collections of flashcards',
         image: Images.twinklecards,
         link: 'https://twinklecards.pl',
         tags: [
@@ -22,7 +22,7 @@ export const projects: IProject[] = [
     },
     {
         name: 'PokeWeakness',
-        description: 'Project for people that want to be the very best and learn how to beat... and catch them all',
+        description: 'Project for people that want to be the very best and learn how to beat... ekhem, catch them all',
         image: Images.pokeweakness,
         link: 'https://github.com/PepeKwapien/PokeWeakness',
         tags: ['angular', 'css', 'html', 'typescript', 'mat-angular', 'modules', 'pokemon']
@@ -81,7 +81,7 @@ export const projects: IProject[] = [
     },
     {
         name: 'Personal page (old)',
-        description: 'Personal page about me I made some time ago',
+        description: 'Previous about me page',
         image: Images.personalold,
         link: 'https://pepekwapien.github.io/PersonalPage/',
         tags: ['html', 'css', 'js']

@@ -1,22 +1,24 @@
 <app-section-header></app-section-header>
 <div class="aboutme-body-container container-width">
     <div class="aboutme-innerbody-container card-width text-light">
+        <div class="paragraph paragraph-text blur">Hi! ✌️😁</div>
         <div class="paragraph paragraph-text blur">
-            My name is <b>Paweł</b> and I'm <b>{{ age }}</b> years old. I've graduated Wrocław University of Science and
-            Technology, where I&nbsp;studied Computer Science, and been working as a&nbsp;Software Engineer ever since
+            My name is <b>Paweł</b>, and I'm <b>{{ age }}</b
+            >-year-old Software Engineer based in {{ placeOfLiving }}.
         </div>
         <div class="paragraph paragraph-text blur">
-            I live in {{ placeOfLiving }} and work as a&nbsp;<b>{{ currentJob.positions[0].name }}</b> at
-            {{ currentJob.company }}. I&nbsp;also work ocassionally as a&nbsp;freelance developer
+            I&nbsp;graduated in Computer Science from Wrocław University of Science and Technology and have been working as
+            a&nbsp;Software Engineer since.
         </div>
         <div class="paragraph paragraph-text blur">
-            At my current job I mostly use {{ stack }} but I&nbsp;am always eager to learn new technologies and hone my skills as
-            a&nbsp;Software Engineer
+            Currently, I'm a&nbsp;<b>{{ currentJob.positions[0].name }}</b> at {{ currentJob.company }}, specializing in
+            {{ stack }}. I&nbsp;also occasionally take on freelance development projects.
         </div>
         <div class="paragraph paragraph-text blur">
-            I am very experienced in working with people despite being an "introverted programmer". I&nbsp;am familiar with
-            solution designs, conducting meetings and presentations, working close to a&nbsp;client and managing a&nbsp;workload
-            of a&nbsp;small team. If you would like to contact me scroll to the bottom of this page
+            I’m passionate about learning new technologies and continuously improving my skills. I’m a&nbsp;team player with
+            excellent communication, problem-solving, and organizational skills. I also happen to have strong experience in client
+            interaction, and solution design.
         </div>
+        <div class="paragraph paragraph-text blur">Feel free to <b>contact</b> me by scrolling to the bottom of this page.</div>
     </div>
 </div>

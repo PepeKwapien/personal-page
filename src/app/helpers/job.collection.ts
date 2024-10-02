@@ -11,7 +11,7 @@ export const jobHistory: IJob[] = [
             { name: 'Fullstack Developer', start: new Date(2022, 9, 1), end: new Date(2023, 3, 1) }
         ],
         image: Images.canon,
-        stack: [Stack.angular, Stack.docker, Stack.dotnet, Stack.tsed, Stack.mariadb],
+        stack: [Stack.angular, Stack.dotnet, Stack.csharp, Stack.docker, Stack.tsed],
         city: 'Breslau'
     },
     {
