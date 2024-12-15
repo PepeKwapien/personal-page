@@ -13,6 +13,7 @@ export enum Images {
     interests = 'assets/images/webp/interests.webp',
 
     twinklecards = 'assets/images/projects/twinklecards.png',
+    osstate = 'assets/images/projects/osstate.png',
     pokeweakness = 'assets/images/projects/pokeweakness.png',
     pokemonbasics = 'assets/images/projects/pokemonbasics.png',
     pepedex = 'assets/images/projects/pepedex.png',

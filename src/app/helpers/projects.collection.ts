@@ -21,6 +21,13 @@ export const projects: IProject[] = [
         ]
     },
     {
+        name: 'OS State',
+        description: 'App to display the state of a machine, which I use to monitor my raspberry pi',
+        image: Images.osstate,
+        link: 'https://github.com/PepeKwapien/os-state',
+        tags: ['svelte', 'svelte-kit', 'cloudflare', 'raspberrypi']
+    },
+    {
         name: 'PokeWeakness',
         description: 'Project for people that want to be the very best and learn how to beat... ekhem, catch them all',
         image: Images.pokeweakness,
@@ -59,7 +66,7 @@ export const projects: IProject[] = [
     },
     {
         name: 'Learn Japanese',
-        description: 'App designed to help you learn and remember Hiragana and Katakana characters',
+        description: 'App created to help learning and remembering Hiragana and Katakana characters',
         image: Images.learnjapanese,
         link: 'https://pepekwapien.github.io/LearnJapanese/',
         tags: ['angular', 'typescript', 'deployed', 'japanese']
@@ -71,14 +78,14 @@ export const projects: IProject[] = [
         link: 'https://github.com/PepeKwapien/pepe-dex',
         tags: ['python', 'tkinter', 'rest']
     },
-    {
-        name: 'Mancala',
-        description:
-            'Simple game engine to play Mancala either with other person or bot using MinMax algorithm (with Alpha Beta pruning)',
-        image: Images.mancala,
-        link: 'https://github.com/PepeKwapien/Mancala',
-        tags: ['java', 'minmax', 'cli', 'alphabeta']
-    },
+    // {
+    //     name: 'Mancala',
+    //     description:
+    //         'Simple game engine to play Mancala either with other person or bot using MinMax algorithm (with Alpha Beta pruning)',
+    //     image: Images.mancala,
+    //     link: 'https://github.com/PepeKwapien/Mancala',
+    //     tags: ['java', 'minmax', 'cli', 'alphabeta']
+    // },
     {
         name: 'Personal page (old)',
         description: 'Previous about me page',
