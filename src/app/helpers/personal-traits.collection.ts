@@ -1,13 +1,13 @@
 export const personalTraits: string[] = [
     'organized 🗂️',
     'fluent in English 🌎',
-    'an engaging communicator 🗣️',
+    'engaging communicator 🗣️',
     'determined 🎯',
-    'a careful listener 👂',
+    'careful listener 👂',
     'trustworthy 🔐',
-    'a quick learner 📚',
+    'quick learner 📚',
     'open-minded 🤯',
-    'an analytical thinker 👩‍💻',
+    'analytical thinker 👩‍💻',
     'collaborative team player 👥'
 ];
 
